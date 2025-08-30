@@ -1,21 +1,32 @@
-import logo from './logo.svg';
+import logo from './images/logo.svg';
 import './App.css';
+import Footer from './components/footer'
+import BackButton from './components/backbutton';
+import LoginButton from './components/loginbutton';
+import SignupButton from './components/signupbutton';
+import Navbar from './components/navBar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+
+        {/* PRUEBA DE COMPONENTES: */}
+        <Footer /> {/* FUNCIONA */}
+        {/* <BackButton /> FUNCIONA */}
+        {/* <div className="btn-container">
+          <LoginButton /> 
+          <SignupButton />
+        </div> FUNCIONA */}
+        <Navbar /> {/* FUNCIONA */}
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Esta es la página principal
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
+          Falta todavía para mostrar el index, pero queda de ejemplo para saber donde poner las cosas y el css que puede servir
         </a>
       </header>
     </div>

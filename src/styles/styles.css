@@ -1,0 +1,145 @@
+.back-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #011263;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  background-color: #001a47;
+}
+
+.breadcrumb-font{
+    font-size: 0.6em;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    white-space: nowrap;
+}
+
+.breadcrumb-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.breadcrumb-icons {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
+}
+
+.breadcrumb-logo {
+  height: 40px;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}   
+
+.breadcrumb-nav {
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 10;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.breadcrumb-segment.fill {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color: #00245E;
+  clip-path: polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%, 8% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  white-space: nowrap;
+}
+
+.breadcrumb-segment.small {
+  flex: 0 0 auto;
+  width: auto;
+  padding: 0.5rem;
+  background-color: #00245E;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%, 25% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.breadcrumb-segment.first {
+  clip-path: polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%);
+}
+
+.breadcrumb-segment.last {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 8% 50%);
+}
+
+.btn-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+footer {
+  background-color: #00245E;
+  font-size: 0.8em;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.go-btn {
+  background-color: #011263;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.go-btn:hover {
+  background-color: #001a47;
+}
