@@ -1,0 +1,134 @@
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/cuslogin.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.background-image-seller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/sellerlogin.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.components{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.form{
+    margin-top: 20px;
+    margin-left: 50px;
+    align-items: center;
+    color: #011263;
+}
+
+.formbutton{
+    margin-top: 40px;
+    margin-left: 140px;
+    align-items: center;
+    color: #011263;
+}
+
+.formfield{
+  background-color: #F5F5F5;
+  color: #6086C0;
+  margin-left: 20px;
+  height: 15px;
+  width: 200px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.formfield::placeholder {
+  color: #a4b9d6;
+}
+
+.logo-apres {
+  height: 15vh;
+  width: auto;
+  margin-left: 15px;
+  margin-right: -60px;
+  margin-top: 40px;
+  object-fit: contain;
+}
+
+.logo-apres-container {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.logo-apres-container-seller {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    margin-left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text{
+    margin-left: 70px;
+    font-size: 0.9em;
+}
+
+.text a {
+    color: #011263;
+    text-decoration: none;
+}
+
+.text a:hover {
+  color: #01116391;
+}
