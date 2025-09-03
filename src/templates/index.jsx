@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 const Index = () => {
   return (
     <div>
-        <Footer />
+      <div className="container"><Footer /></div>
     </div>
   );
 };

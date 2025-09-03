@@ -22,11 +22,13 @@ const CustomerLogin = () => {
                     <h2>Iniciar Sesión</h2>
                     <form>
                         <div className="form">
-                            <input type="email" placeholder="Correo Electrónico" className="formfield" required />
+                            <label htmlFor="email" className="label">Correo Electrónico</label>
+                            <input type="email" placeholder="Correo Electrónico..." className="formfield" required />
                             
                         </div>
                         <div className="form">
-                            <input type="password" placeholder="Contraseña" className="formfield" required />
+                            <label htmlFor="password" className="label">Contraseña</label>
+                            <input type="password" placeholder="Contraseña..." className="formfield" required />
                         </div>
                         <div className="formbutton">
                             <LoginButton />

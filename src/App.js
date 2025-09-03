@@ -1,12 +1,5 @@
 import React from 'react';
 import './App.css';
-import logo from './images/logo.svg';
-import Footer from './components/footer'
-import BackButton from './components/backbutton';
-import LoginButton from './components/loginbutton';
-import SignupButton from './components/signupbutton';
-import Navbar from './components/navBar';
-import SellerLoginButton from './components/sellerlogin';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

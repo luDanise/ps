@@ -19,7 +19,8 @@
 }
 
 .breadcrumb-font{
-    font-size: 0.6em;
+    font-size: 0.9em;
+    color: white;
     margin-left: 50px;
     display: flex;
     align-items: center;
@@ -168,4 +169,30 @@ footer p {
 
 .sellerlogin-btn:hover {
   background-color: #dde2f6;
+}
+
+.verify-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.verify-button:hover {
+  background-color: #45a049;
+}
+
+.verify-button.verified {
+  background-color: #2E7D32;
+}
+
+.check-icon {
+  font-size: 18px;
 }
