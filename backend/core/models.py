@@ -25,7 +25,7 @@ class City(Enum):
 class Seller(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    city = models.CharField(max_length=50, choices=City.choices(), default="")
+    city = models.CharField(max_length=50, choices=City.choices(), default="") #corregir porque me deja poner buenos aires
     user = models.CharField(max_length=100, unique=True)
     password = models.CharField(max_length=100)
         
