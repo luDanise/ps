@@ -73,3 +73,19 @@ class CustomerSignupView(View):
         except Exception as e:
             print("Error al registrar:", e)
             return JsonResponse({'error': 'Error al crear el usuario'}, status=400)
+
+@method_decorator(csrf_exempt, name='dispatch')
+class CustomerDetailView(View):
+    def get(self, request, customer_id):
+        try:
+            customer = Customer.objects.get(id=customer_id)
+            data = {
+                'first_name': customer.first_name,
+                'last_name': customer.last_name,
+                'birthDate': customer.birthDate,
+                'province': customer.province,
+                'email': customer.email
+            }
+            return JsonResponse(data, status=200)
+        except Customer.DoesNotExist:
+            return JsonResponse({'error': 'Cliente no encontrado'}, status=404)

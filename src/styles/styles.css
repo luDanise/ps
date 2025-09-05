@@ -28,6 +28,19 @@
     white-space: nowrap;
 }
 
+.breadcrumb-fontc{
+    font-size: 0.9em;
+    color: white;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    white-space: nowrap;
+}
+.breadcrumb-fontc:hover{
+    color: rgba(255, 255, 255, 0.811);
+}
+
 .breadcrumb-icon {
     display: block;
     margin-left: auto;
@@ -44,7 +57,7 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 30px;
-    margin-left: 30px;
+    margin-left: 40px;
     color: white;
 }
 
@@ -86,7 +99,7 @@
   width: auto;
   padding: 0.5rem;
   background-color: #00245E;
-  clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%, 25% 50%);
+  clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%);
   display: flex;
   align-items: center;
   justify-content: center;
