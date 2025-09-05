@@ -74,6 +74,22 @@
   padding: 20px;
 }
 
+.error{
+  color: #011263;
+  margin-top: 20px;
+  margin-left: 130px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.errorsu{
+  color: #011263;
+  margin-top: 5px;
+  margin-left: 70px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .font{
     font-size: 1.4em;
     margin-bottom: 15px;
@@ -81,7 +97,7 @@
     color: #011263;
 }
 .form{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 50px;
     align-items: center;
     color: #011263;
@@ -154,7 +170,7 @@
 
 .logo-apres-container {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 30px;
     z-index: 2;
     display: flex;
@@ -183,6 +199,16 @@
   overflow-x: auto;
 }
 
+.success{
+  color: #011263;
+  margin-top: 10px;
+  margin-left: 185px;
+  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
 .text{
     margin-left: 125px;
     font-size: 0.9em;
@@ -195,4 +221,8 @@
 
 .text a:hover {
   color: #01116391;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
 }

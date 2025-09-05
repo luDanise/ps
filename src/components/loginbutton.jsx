@@ -3,7 +3,7 @@ import '../styles/styles.css';
 
 function LoginButton({ onClick }) {
   return (
-    <button className="go-btn" onClick={onClick}>
+    <button type="button" className="go-btn" onClick={onClick}>
       INGRESAR
     </button>
   );

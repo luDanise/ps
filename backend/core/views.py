@@ -55,3 +55,21 @@ class CustomerLoginView(View):
         except Exception as e:
             print("Error inesperado:", e)
             return JsonResponse({'error': 'Error interno'}, status=500)
+        
+@method_decorator(csrf_exempt, name='dispatch')
+class CustomerSignupView(View):
+    def post(self, request):
+        try:
+            data = json.loads(request.body)
+            customer = Customer.objects.create(
+                first_name=data.get('first_name', '').strip(),
+                last_name=data.get('last_name', '').strip(),
+                birthDate=data.get('birthDate'),
+                province=data.get('province', '').strip(),
+                email=data.get('email', '').strip(),
+                password=data.get('password', '').strip()
+            )
+            return JsonResponse({'message': 'Usuario creado'}, status=201)
+        except Exception as e:
+            print("Error al registrar:", e)
+            return JsonResponse({'error': 'Error al crear el usuario'}, status=400)
